@@ -1,27 +1,9 @@
-declare global {
-    interface Date {
-        addHours: (h: number) => Date
-        addMonth: (m: number) => Date
-    }
-    
-    interface Array<T> {
-        diff: <T = any>(arr: T[]) => T[]
-        unique: <T = any>() => T[]
-    }
-    
-    interface String {
-        hexEncode: () => string,
-        hexDecode: () => string
-    }
-    
-    interface Math {
-        fixed: (num: number, decimal: number) => number
-    }
-}
+
+
 
 
 export const polyfills = (): void => {
-    
+
     Date.prototype.addHours = function(h: number) { this.setTime(this.getTime() + (h*60*60*1000)); return this }
     Date.prototype.addMonth = function(m: number) { const day = this.getDate(); this.setMonth(this.getMonth() + m); if (this.getDate() !== day) this.setDate(0); return this }
     
