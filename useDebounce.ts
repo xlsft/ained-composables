@@ -1,5 +1,5 @@
 class Debouncer {
-    private timeout: NodeJS.Timeout | undefined
+    private timeout
     constructor(private wait: number) {}
     use(action: () => void) {
         clearTimeout(this.timeout)

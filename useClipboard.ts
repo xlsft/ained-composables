@@ -13,16 +13,13 @@
  * @return {void} This function does not return a value.
  */
 export const useClipboard = (data: string) => {
-    const debug = useDebug('useClipboard')
-    debug.init('Clipboard action initialized')
-    if (navigator.clipboard) navigator.clipboard.writeText(data).then(() => debug.ok('Successfully copied text:', data)).catch((e) => debug.error('Failed to copy text:', data, e));
+    if (navigator.clipboard) navigator.clipboard.writeText(data)
     else {
-        debug.info('Can`t use navigator, using deprecated fallback')
         const temp = document.createElement('input')
         temp.value = data
         document.body.appendChild(temp)
         temp.select()
-        try { document.execCommand('copy'); debug.ok('Successfully copied text:', data) } catch (e) { debug.error('Failed to copy text:', data, e) }
+        document.execCommand('copy') 
         document.body.removeChild(temp)
     }
 }
