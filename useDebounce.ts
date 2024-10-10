@@ -26,4 +26,4 @@ class Debouncer {
  * 
  * @return {Debouncer} An instance of the `Debouncer` class.
  */
-export const useDebouncer = (wait: number) => new Debouncer(wait)
+export const useDebouncer = (wait: number): Debouncer => new Debouncer(wait)

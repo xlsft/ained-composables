@@ -12,7 +12,7 @@
  * 
  * @return {void} This function does not return a value.
  */
-export const useClipboard = (data: string) => {
+export const useClipboard = (data: string): void => {
     if (navigator.clipboard) navigator.clipboard.writeText(data)
     else {
         const temp = document.createElement('input')

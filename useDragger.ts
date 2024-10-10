@@ -180,8 +180,8 @@ class Dragger {
     }
 
     public tractor = {
-        enable: () => { this.interval = window.setInterval(this.scroll, this.options.tractor!.interval) },
-        disable: () => { if (this.interval) { clearInterval(this.interval); this.interval = null } }    
+        enable: (): void => { this.interval = window.setInterval(this.scroll, this.options.tractor!.interval) },
+        disable: (): void => { if (this.interval) { clearInterval(this.interval); this.interval = null } }    
     }
 
 }
@@ -203,4 +203,4 @@ class Dragger {
  * onUnmounted(() => dragger.destroy())
  * ```
 */
-export const useDragger = (options?: DraggerOptions) => new Dragger(options)
+export const useDragger = (options?: DraggerOptions): Dragger => new Dragger(options)

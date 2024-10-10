@@ -11,7 +11,11 @@
  * 
  * @return {{ color: string, background: string, borderColor: string }} An object containing the computed colors.
  */
-export const useColor = (base: string) => {
+export const useColor = (base: string): {
+    color: string,
+    background: string,
+    borderColor: string,
+} => {
 
     const constants = {
         black: '#1F2937',
