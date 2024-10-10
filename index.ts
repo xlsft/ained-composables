@@ -3,8 +3,11 @@ import { useClipboard } from './useClipboard'
 import { useColor } from './useColor'
 import { useDebouncer } from './useDebounce'
 import { useDragger } from './useDragger'
-import { useProxyClone } from './useProxyClone'
 
+import { clone } from './utils/clone'
+import { between } from './utils/between'
+import { polyfills } from './utils/polyfills'
+import { regexp } from './utils/regexp'
 
 export {
     useCase,
@@ -12,5 +15,6 @@ export {
     useColor,
     useDebouncer,
     useDragger,
-    useProxyClone
+
+    clone, between, polyfills, regexp,
 }
