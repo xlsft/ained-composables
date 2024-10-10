@@ -1,0 +1,19 @@
+{
+  "name": "ained-composables",
+  "version": "1.0.0",
+  "description": "Collection of Ained Ecosystem Vue/Nuxt composables",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xlsft/ained-composables.git"
+  },
+  "author": "Ained (XL Software)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xlsft/ained-composables/issues"
+  },
+  "homepage": "https://github.com/xlsft/ained-composables#readme"
+}
