@@ -12,4 +12,4 @@
  * 
  * @return Clone of proxy without proxy
  */
-export const useProxyClone = <T>(proxy: any): T => JSON.parse(JSON.stringify(proxy))
+export const useProxyClone = <T = any>(proxy: any): T => JSON.parse(JSON.stringify(proxy))
