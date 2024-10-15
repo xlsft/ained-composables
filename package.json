@@ -1,0 +1,6 @@
+{
+    "dependencies":{
+        "vue": "^3.5.12"
+    },
+    "types": "polyfill.d.ts" 
+}

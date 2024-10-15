@@ -1,5 +1,5 @@
 /**
- * ## clone
+ * ## utils/clone
  * @param proxy Proxy, like `reactive()` or `ref()`
  * 
  * This function is intended to replace native `structuredClone`, because `structuredClone` can't clone proxies

@@ -1,5 +1,5 @@
 /**
- * ## between
+ * ## utils/between
  * @param {number} min minimal value
  * @param {number} max maximum value
  * 
