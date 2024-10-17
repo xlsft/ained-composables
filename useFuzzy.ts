@@ -19,7 +19,7 @@ import Fuse, { IFuseOptions } from 'fuse.js'
 * 
 * `Fuse.js` docs: https://www.fusejs.io
 */
-export const useFuzzy = <Item = unknown>(list: Item[], options?: IFuseOptions<Item>) => {
+export const useFuzzy = <Item = unknown>(list: Item[], options?: IFuseOptions<Item>): Fuse<Item> => {
     const fuse = new Fuse(list, options)
     return fuse
 }

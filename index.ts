@@ -5,6 +5,7 @@ import { useDebouncer } from './useDebounce'
 import { useDragger } from './useDragger'
 import { useBadge } from './useBadge'
 import { useMediaQuery } from './useMediaQuery'
+import { useFuzzy } from './useFuzzy'
 
 import { clone } from './utils/clone'
 import { between } from './utils/between'
@@ -19,6 +20,7 @@ export {
     useDragger,
     useBadge,
     useMediaQuery,
+    useFuzzy,
 
     clone, between, polyfills, regexp,
 }
