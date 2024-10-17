@@ -6,6 +6,7 @@ import { useDragger } from './useDragger'
 import { useBadge } from './useBadge'
 import { useMediaQuery } from './useMediaQuery'
 import { useFuzzy } from './useFuzzy'
+import { useUUID } from './useUUID'
 
 import { clone } from './utils/clone'
 import { between } from './utils/between'
@@ -21,6 +22,7 @@ export {
     useBadge,
     useMediaQuery,
     useFuzzy,
+    useUUID,
 
     clone, between, polyfills, regexp,
 }
