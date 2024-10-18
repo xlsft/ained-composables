@@ -13,6 +13,7 @@ import { between } from './utils/between'
 import { polyfills } from './utils/polyfills'
 import { regexp } from './utils/regexp'
 import { empty } from './utils/empty'
+import { filter } from './utils/filter'
 
 export {
     useCase,
@@ -25,5 +26,5 @@ export {
     useFuzzy,
     useUUID,
 
-    clone, between, polyfills, regexp, empty
+    clone, between, polyfills, regexp, empty, filter
 }
