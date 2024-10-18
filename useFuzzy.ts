@@ -10,15 +10,15 @@ import Fuse, { IFuseOptions } from 'fuse.js'
  * This function returns an instance of `Fuse`, which can be used to perform fuzzy searches on the provided list.
  *
  * ```ts
-* const items = [{ name: 'apple' }, { name: 'banana' }];
-* const fuse = useFuzzy(items, { keys: ['name'] });
-* const result = fuse.search('app'); // [{ item: { name: 'apple' } }]
-* ```
-*
-* @return Instance of `Fuse` initialized with the provided list and options.
-* 
-* `Fuse.js` docs: https://www.fusejs.io
-*/
+ * const items = [{ name: 'apple' }, { name: 'banana' }];
+ * const fuse = useFuzzy(items, { keys: ['name'] });
+ * const result = fuse.search('app'); // [{ item: { name: 'apple' } }]
+ * ```
+ *
+ * @return Instance of `Fuse` initialized with the provided list and options.
+ * 
+ * `Fuse.js` docs: https://www.fusejs.io
+ */
 export const useFuzzy = <Item = unknown>(list: Item[], options?: IFuseOptions<Item>): Fuse<Item> => {
     const fuse = new Fuse(list, options)
     return fuse

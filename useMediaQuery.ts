@@ -5,7 +5,7 @@ import { ref, onMounted, onUnmounted, Ref } from 'vue'
  * @param {string} media valid media query
  * 
  * ```ts
- * const match = await useMediaQuery('(min-width: 1000px)'); // Became true if window size is greater than 1000px
+ * const match = useMediaQuery('(min-width: 1000px)'); // Became true if window size is greater than 1000px
  * ```
  * 
  * @return {Ref<boolean>} reactive proxy
