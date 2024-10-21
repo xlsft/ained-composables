@@ -27,11 +27,11 @@ export const useCurrency = (value: number, options?: { currency?: { locale?: str
     const props = {
         currency: { 
             locale: 'ru-RU', code: 'RUB',
-            ...options.currency ? options.currency : {} 
+            ...options?.currency ? options.currency : {} 
         },
         accuracy: {
             min: 0, max: 0,
-            ...options.accuracy ? options.accuracy : {}
+            ...options?.accuracy ? options.accuracy : {}
         }
     }
     return new Intl.NumberFormat(props.currency.locale, { 
