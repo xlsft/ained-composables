@@ -7,6 +7,7 @@ import { useBadge } from './useBadge'
 import { useMediaQuery } from './useMediaQuery'
 import { useFuzzy } from './useFuzzy'
 import { useUUID } from './useUUID'
+import { useCurrency } from './useCurrency'
 
 import { clone } from './utils/clone'
 import { between } from './utils/between'
@@ -25,6 +26,7 @@ export {
     useMediaQuery,
     useFuzzy,
     useUUID,
+    useCurrency,
 
     clone, between, polyfills, regexp, empty, filter
 }
