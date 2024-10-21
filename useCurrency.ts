@@ -13,7 +13,7 @@
  * ```
  *
  * @param value The numeric value to format as currency.
- * @param options Formatting options:
+ * @param options (Optional) Formatting options:
  *  - `currency`: Optional object with:
  *     - `locale`: String specifying the locale (default: 'ru-RU').
  *     - `code`: String representing the currency code (default: 'RUB').
@@ -23,7 +23,7 @@
  *
  * @return The formatted currency string.
  */
-export const useCurrency = (value: number, options: { currency?: { locale?: string, code?: string }, accuracy?: { min?: number, max?: number }}): string => {
+export const useCurrency = (value: number, options?: { currency?: { locale?: string, code?: string }, accuracy?: { min?: number, max?: number }}): string => {
     const props = {
         currency: { 
             locale: 'ru-RU', code: 'RUB',
