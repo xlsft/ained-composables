@@ -62,6 +62,7 @@ export const usePureClick = (container: Ref<HTMLElement | null>, click: (event: 
     };
 
     onMounted(() => {
+        if (!container.value) return
         container.value!.addEventListener('mousedown', mouse.down);
         container.value!.addEventListener('mouseup', mouse.up);
         container.value!.addEventListener('click', mouse.click);
@@ -71,6 +72,7 @@ export const usePureClick = (container: Ref<HTMLElement | null>, click: (event: 
     });
 
     onUnmounted(() => {
+        if (!container.value) return
         container.value!.removeEventListener('mousedown', mouse.down);
         container.value!.removeEventListener('mouseup', mouse.up);
         container.value!.removeEventListener('click', mouse.click);
