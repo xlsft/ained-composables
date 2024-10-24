@@ -8,6 +8,8 @@ import { useMediaQuery } from './useMediaQuery'
 import { useFuzzy } from './useFuzzy'
 import { useUUID } from './useUUID'
 import { useCurrency } from './useCurrency'
+import { usePureClick } from './usePureClick'
+import { useShare } from './useShare'
 
 import { clone } from './utils/clone'
 import { between } from './utils/between'
@@ -27,6 +29,8 @@ export {
     useFuzzy,
     useUUID,
     useCurrency,
+    usePureClick,
+    useShare,
 
     clone, between, polyfills, regexp, empty, filter
 }
